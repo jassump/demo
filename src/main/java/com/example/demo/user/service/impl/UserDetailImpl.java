@@ -1,4 +1,4 @@
-package com.example.demo.user.impl;
+package com.example.demo.user.service.impl;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,7 +8,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.example.demo.domain.user.entity.User;
+import com.example.demo.domain.user.entity.Usuario;
 
 public class UserDetailImpl implements UserDetails {
 
@@ -16,9 +16,9 @@ public class UserDetailImpl implements UserDetails {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private User user; // Classe de usuário que criamos anteriormente
+	private Usuario user; // Classe de usuário que criamos anteriormente
 
-    public UserDetailImpl(User user) {
+    public UserDetailImpl(Usuario user) {
         this.user = user;
     }
 
